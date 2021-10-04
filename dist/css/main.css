@@ -368,6 +368,7 @@ html {
 }
 
 .featured-books .swiper {
+  margin-top: 10rem;
   width: 100%;
   height: 100%;
 }
@@ -489,6 +490,7 @@ html {
 .subscribe-sec {
   display: -ms-grid;
   display: grid;
+  position: relative;
   background: url(../../image/letter-bg.jpg) center/cover no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -498,6 +500,8 @@ html {
 .subscribe-sec .subscribe {
   place-self: center flex-end;
   width: 100%;
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
   max-width: 500px;
   margin: 2rem 0;
   padding: 30px;
@@ -530,6 +534,9 @@ html {
   text-align: center;
   padding: 4rem;
   width: 100%;
+  position: relative;
+  left: -1000px;
+  overflow: hidden;
 }
 
 .new-arhive h2 {
@@ -594,7 +601,10 @@ html {
 }
 
 .deal .holder {
-  place-self: center;
+  place-items: center;
+  position: relative;
+  bottom: -200px;
+  z-index: 11;
   padding: clamp(1.5rem, 10vw, 10rem);
 }
 
@@ -627,6 +637,9 @@ html {
 
 .deal .img {
   margin-top: 4rem;
+  position: relative;
+  right: -400px;
+  overflow: hidden;
 }
 
 .deal .img img {
@@ -637,6 +650,8 @@ html {
   width: 100%;
   padding: 6rem;
   text-align: center;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
 }
 
 .testemonial h2 {
@@ -701,6 +716,8 @@ html {
 .blog-section {
   padding: 6rem;
   text-align: center;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .blog-section h2 {
@@ -777,6 +794,8 @@ footer {
 footer .info {
   display: -ms-grid;
   display: grid;
+  -webkit-transform: scale(4);
+          transform: scale(4);
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }

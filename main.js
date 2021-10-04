@@ -177,3 +177,65 @@ var largeScreen = document.querySelector(".large-screen")
 window.addEventListener("scroll", ()=>{
   largeScreen.classList.toggle("sticky", window.scrollY > 0)
 })
+
+gsap.to(".header-holder", {
+  scrollTrigger: {
+    scrub: 1
+  },
+  scale: 0.5
+})
+
+gsap.to(".icon-container ", {
+  scrollTrigger: {
+    scrub: 1
+  },
+  x: 500
+})
+gsap.to(".featured-books", {
+  scrollTrigger: {
+    scrub: 1
+  },
+  y: -400,
+})
+gsap.to(".subscribe", {
+  scrollTrigger: {
+    scrub: 1
+  },
+  x: -400,
+})
+gsap.to(".new-arhive", {
+  scrollTrigger: {
+    scrub: 1
+  },
+  x: 1700,
+})
+gsap.to(".deal .holder", {
+  scrollTrigger: {
+    scrub: 1
+  },
+  y: -200
+})
+gsap.to(".deal .img", {
+  scrollTrigger: {
+    scrub: 1
+  },
+  x: -500
+})
+gsap.to(".testemonial", {
+  scrollTrigger: {
+    scrub: 1
+  }, 
+  scale: 1
+})
+gsap.to(".blog-section", {
+  scrollTrigger: {
+    scrub: 1
+  }, 
+  scale: 1
+})
+gsap.to(".info", {
+  scrollTrigger: {
+    scrub: 1
+  }, 
+  scale: 1
+})

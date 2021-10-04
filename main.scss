@@ -293,6 +293,7 @@ html {
 }
 .featured-books {
   .swiper {
+    margin-top: 10rem;
     width: 100%;
     height: 100%;
     .box {
@@ -389,7 +390,7 @@ html {
 }
 .subscribe-sec {
   display: grid;
-
+  position: relative;
   background: url(../../image/letter-bg.jpg) center/cover no-repeat;
   background-attachment: fixed;
 
@@ -398,6 +399,7 @@ html {
   .subscribe {
     place-self: center flex-end;
     width: 100%;
+    transform: translateX(500px);
     max-width: 500px;
     margin: 2rem 0;
     padding: 30px;
@@ -428,6 +430,9 @@ html {
   text-align: center;
   padding: 4rem;
   width: 100%;
+  position: relative;
+  left: -1000px;
+  overflow: hidden;
   h2 {
     font-size: clamp(1.3rem, 10vw, 3rem);
     border: 1px solid grey;
@@ -475,8 +480,10 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   background: #f2f2f2;
   .holder {
-    place-self: center;
-
+    place-items: center;
+    position: relative;
+    bottom: -200px;
+    z-index: 11;
     padding: clamp(1.5rem, 10vw, 10rem);
     h3 {
       font-size: 2.4rem;
@@ -504,7 +511,9 @@ html {
   }
   .img {
     margin-top: 4rem;
-
+    position: relative;
+    right: -400px;
+    overflow: hidden;
     img {
       width: 100%;
     }
@@ -514,6 +523,7 @@ html {
   width: 100%;
   padding: 6rem;
   text-align: center;
+  transform: scale(0.4);
   h2 {
     font-size: clamp(1.3rem, 10vw, 3rem);
     border: 1px solid grey;
@@ -563,6 +573,7 @@ html {
 .blog-section {
   padding: 6rem;
   text-align: center;
+  transform: scale(2);
   h2 {
     font-size: clamp(1.3rem, 10vw, 3rem);
     border: 1px solid grey;
@@ -625,6 +636,7 @@ footer {
 
   .info {
     display: grid;
+    transform: scale(4);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     h2 {
       font-size: 2.2rem;
