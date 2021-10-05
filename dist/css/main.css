@@ -5,7 +5,8 @@
           box-sizing: border-box;
 }
 
-html {
+html,
+body {
   font-size: 62.5%;
   overflow: hidden;
   overflow-y: scroll;
@@ -296,7 +297,7 @@ html {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 11111;
+    z-index: 300;
   }
 }
 
