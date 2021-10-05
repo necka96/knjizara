@@ -28,6 +28,11 @@ body {
   overflow: hidden;
   overflow-y: scroll;
 }
+body {
+  @include mobile(laptop) {
+    overflow: visible;
+  }
+}
 .preloader {
   position: fixed;
   left: 0;
