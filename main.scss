@@ -24,6 +24,8 @@
 }
 html {
   font-size: 62.5%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 .preloader {
   position: fixed;
@@ -35,7 +37,7 @@ html {
   justify-content: center;
   align-items: center;
   background: #f5f7f6;
-  z-index: 100;
+  z-index: 400;
   &.disppear {
     animation: disppear 1s forwards;
   }
@@ -636,7 +638,7 @@ footer {
 
   .info {
     display: grid;
-    transform: scale(4);
+
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     h2 {
       font-size: 2.2rem;
