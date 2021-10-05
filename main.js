@@ -233,9 +233,3 @@ gsap.to(".blog-section", {
   }, 
   scale: 1
 })
-gsap.to(".info", {
-  scrollTrigger: {
-    scrub: 1
-  }, 
-  scale: 1
-})
