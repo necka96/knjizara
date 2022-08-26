@@ -544,7 +544,6 @@ body {
   padding: 4rem;
   width: 100%;
   position: relative;
-  left: -1000px;
   overflow: hidden;
 }
 
@@ -647,7 +646,6 @@ body {
 .deal .img {
   margin-top: 4rem;
   position: relative;
-  right: -400px;
   overflow: hidden;
 }
 
@@ -659,8 +657,6 @@ body {
   width: 100%;
   padding: 6rem;
   text-align: center;
-  -webkit-transform: scale(0.4);
-          transform: scale(0.4);
 }
 
 .testemonial h2 {
@@ -725,8 +721,6 @@ body {
 .blog-section {
   padding: 6rem;
   text-align: center;
-  -webkit-transform: scale(2);
-          transform: scale(2);
 }
 
 .blog-section h2 {
